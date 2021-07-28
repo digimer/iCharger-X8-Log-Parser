@@ -7,6 +7,7 @@ This is exceedingly simplistic and should be improved a lot if anyone plans to u
 
 Example output;
 
+```
 $1;1;0;3;0;0;12268;3287;0;264;0;3288;0;0;0;0;0;0;0;44
 $1;1;1000;3;0;0;12269;3286;0;264;0;3288;0;0;0;0;0;0;0;29
 $1;1;2000;3;0;7;12268;3285;0;264;0;3288;0;0;0;0;0;0;0;27
@@ -17,16 +18,20 @@ $1;1;6000;3;0;2948;12215;3403;12;266;0;3293;0;0;0;0;0;0;0;22
 $1;1;7000;3;0;2997;12209;3405;20;266;0;3294;0;0;0;0;0;0;0;24
 $1;1;8000;3;0;3002;12214;3407;28;267;0;3294;0;0;0;0;0;0;0;20
 $1;1;9000;3;0;3000;12213;3407;37;267;0;3294;0;0;0;0;0;0;0;30
+```
 
 Decyphered (and possibly inaccurate) columns;
 
+```
 0        1     2           3        4        5             6         7          8            9       10   11         12   13   14   15   16   17   18  19
 $1     ; 1   ; 756000    ; 3      ; 0      ; 300         ; 12283   ; 3621     ; 4515       ; 360   ; 0  ; 3600     ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0 ; 34
 ignore  mode   time (ms)   ignore   ignore   charge amps   input v   output v   charged Ah   Avg v   ?    cell 1 v   cell 2~8v
                % 1000                        % 100         % 1000    % 1000     % 1000       % 100        % 100
+```
 
 Modes:
 
+````
 Mode of Operation
 mop[1]  = "Charging"
 mop[2]  = "Discharging"
@@ -40,3 +45,4 @@ mop[9]  = "NIxx trickle"
 mop[10] = "Foam cut"
 mop[11] = "Info"
 mop[12] = "External-discharging"
+```
